@@ -9,49 +9,20 @@
 }
 
 @font-face {
-  font-family: 'Totally Different';
-  src: url('/fonts/TotallyDifferentRegular.ttf') format('truetype'); 
+  font-family: 'Mohave';
+  src: url('/fonts/Mohave.ttf') format('truetype'); 
 }
 :root {
   --navbar-font-family: 'Major Birch', sans-serif;
-  --bs-body-font-family: 'Totally Different', sans-serif;
+  --bs-body-font-family: 'Mohave', sans-serif;
   --headings-font-family: 'Major Birch', sans-serif;
-  --footer-font-family: 'Totally Different', sans-serif;
+  --footer-font-family: 'Major Birch', sans-serif;
   --max-width: 1100px;
   --border-radius: 12px;
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
+  --th-color-white: rgba(255, 255, 255, 0.75);
+  --th-color-black: rgba(0, 0, 0, 0.5);
+  --th-color-transparent: rgba(0, 0, 0, 0);
+  --th-color-gray: rgba(196, 196, 196, 0.5);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -148,7 +119,6 @@ h2,
 h3 {
   font-family: var(--headings-font-family);
   text-transform: uppercase;
-  margin-bottom: 1rem;
 }
 
 p {
@@ -158,8 +128,10 @@ p {
 
 ul,
 il {
+  display: flex;
   list-style: none;
   font-family: var(--bs-body-font-family);
+  justify-content: center;
 }
 
 il {

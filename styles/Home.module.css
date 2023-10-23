@@ -18,7 +18,7 @@
 .row h3 {
   padding: 0 3px 0 3px;
   text-transform: uppercase;
-  color: rgba(255 255, 255, 0.75);
+  color: rgba(204, 204, 204, 0.9);
 }
 
 .singleColumn {
@@ -30,6 +30,8 @@
 .column {
   flex: 1;
   padding: 1rem;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .card {
@@ -59,7 +61,7 @@
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     color: #FFF;
-    background: rgba(var(--card-rgb), 0.1);
+    background: rgba(var(--card-rgb), 0.75);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
   }
 
@@ -93,6 +95,10 @@
     margin: 0 1px 0 1px;
   }
 
+  .section {
+    text-align: center;
+  }
+
   .logo {
     position: relative;
     top: 0;
@@ -110,4 +116,124 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.html, 
+.body, 
+.section {
+  block-size: 100%;
+}
+
+.html {
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section:nth-of-type(1) {
+  color: white;
+  background: var(--th-color-transparent);
+}
+
+.section:nth-of-type(2) {
+  color: black;
+  background: var(--th-color-gray);
+  border: 1px solid white;
+  border-bottom: none;
+}
+
+.section:nth-of-type(3) {
+  color: black;
+  background: var(--th-color-gray);
+  border: 1px solid white;
+  border-bottom: none;
+  border-top: none;
+}
+
+.section:nth-of-type(4) {
+  color: white;
+  background: var(--th-color-black);
+  border: 1px solid white;
+  border-bottom: none;
+}
+
+.section:nth-of-type(5) {
+  color: white;
+  background: var(--th-color-black);
+  border: 1px solid white;
+  border-top: none;
+  border-bottom: none;
+}
+
+.section:nth-of-type(6) {
+  color: white;
+  background: var(--th-color-black);
+  border: 1px solid white;
+  border-top: none;
+}
+
+.section:nth-of-type(7) {
+  color: black;
+  background: var(--th-color-gray);
+  border: 1px solid white;
+  border-bottom: none;
+  border-top: none;
+}
+
+.section:nth-of-type(8) {
+  color: black;
+  background: var(--th-color-gray);
+  border: 1px solid white;
+  border-top: none;
+}
+
+.section h1 {
+  font-size: 1.5rem;
+  margin: 2px 1px 2px  1px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.section h2 {
+  margin: 2px 1px 2px  1px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-decoration: underline;
+}
+
+.section h3 {
+  font-size: 0.75rem;
+  margin: 2px 1px 2px  1px;
+  padding-bottom: 0.5rem;
+}
+
+.section p {
+  margin: 0 1px 0 1px;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.section ul {
+  margin: 3px 1px 3px 1px;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.section li {
+  margin: 3px 1px 3px 1px;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 4rem;
 }
