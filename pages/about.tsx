@@ -24,10 +24,10 @@ export default function AboutPage() {
           <div className={styles.grid}>
             <div className={styles.card}>
               <h2>
-                Who We Are &rarr;
+                An introduction &rarr;
               </h2>
               <p>
-                Welcome to RSC Construction Services, LLC. I'm Robb Connell, and I've dedicated over three decades to honing the art of carpentry and handyman services. My journey through various leadership roles and extensive field experience has culminated in the founding of this company—a beacon of quality for homeowners seeking unparalleled craftsmanship.
+                Welcome to RSC Construction Services, LLC. I'm Robb Connell, and I've dedicated over three decades to the building and construction trades. My journey through various leadership roles and extensive field experience has culminated in the founding of this company—a beacon of quality for homeowners seeking unparalleled craftsmanship.
               </p>
             </div>
             <div className={styles.card}>
@@ -35,12 +35,12 @@ export default function AboutPage() {
                 My Journey &rarr;
               </h2>
               <p>
-                From guiding Connell's Restoration & Sealants to becoming an industry benchmark to leading projects as the VP of Structural Restoration & Sealants, my career has been driven by a passion for excellence and growth. The discipline and precision I learned in the Navy as a repair technician have been the bedrock of my work ethic. These experiences, combined with a rigorous education in Mathematics and Accountancy, empower me to deliver services that not only meet but exceed your expectations.
+                From guiding Connell's Restoration & Sealants to becoming an industry benchmark to leading projects as the VP of Structural Restoration & Sealants, my career has been driven by a passion for excellence and growth. The discipline and precision I learned in the Navy as an Avionics Supervisor have been the bedrock of my work ethic. These experiences, combined with a rigorous education in Mathematics and Accountancy, empower me to deliver services that not only meet but exceed your expectations.
               </p>
             </div>
             <div className={styles.card}>
               <h2>
-                Our Core Values &rarr;
+                Core Values &rarr;
               </h2>
               <ul className={styles.ul}>
                 <li className={styles.li}>

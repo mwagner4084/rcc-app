@@ -28,12 +28,15 @@ export default function Home() {
                   <li className={styles.li}>
                     Carpentry Services
                   </li>
+                  <i className="bi bi-dot"></i>
                   <li className={styles.li}>
                     Home Improvement
                   </li>
+                  <i className="bi bi-dot"></i>
                   <li className={styles.li}>
                     Masonry Repointing
                   </li>
+                  <i className="bi bi-dot"></i>
                   <li className={styles.li}>
                     Deck Repair
                   </li>
