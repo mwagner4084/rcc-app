@@ -6,7 +6,7 @@
     left: 0;
     text-align: center;
     width: 100%;
-    background-color: #333;
+    background-color: #656d4a;
     color: #fff;
     font-size: 14px;
     text-transform: uppercase;
@@ -23,6 +23,11 @@
     padding: 14px 16px;
 }
 
+.link:hover {
+    background-color: #fff;
+    color: #656d4a;
+}
+
 @media (min-width:100px) and (max-width:800px) {
     .nav {
         position: relative;
@@ -31,7 +36,7 @@
         left: 0;
         text-align: center;
         width: 100%;
-        background-color: #333;
+        background-color: #656d4a;
         color: #fff;
         font-size: 12px;
         text-transform: uppercase;

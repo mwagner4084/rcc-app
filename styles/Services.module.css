@@ -1,0 +1,94 @@
+/* styles/Home.module.css */
+.container {
+    font-family: 'Arial', sans-serif;
+}
+  
+.header {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    filter: invert(1);
+
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menuItem {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.menuItem:hover {
+    color: #0070f3;
+}
+
+.main {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body {
+    background: url('/img/floor.jpg') no-repeat center center;
+    background-size: cover;
+    background-color: #F6F7F8;
+}
+
+.hero {
+    text-align: center;
+    color: #fff;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.ctaButton {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: #303A2B;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+    background: #A4B494;
+    color: black;
+}
+  
+  
