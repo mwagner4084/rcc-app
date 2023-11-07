@@ -98,3 +98,14 @@
   display: block;
   padding: 1rem 0 0.5rem 0;
 }
+
+@media (max-width: 705px) {
+    .grid {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .title {
+      font-size: 3rem;
+    }
+  }

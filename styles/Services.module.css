@@ -1,94 +1,139 @@
-/* styles/Home.module.css */
-.container {
-    font-family: 'Arial', sans-serif;
+/* styles/Services.module.css */
+.body {
+    padding: 0 2rem;
+    background: url('/img/texture-bg.jpg') no-repeat center center;
+    background-size: cover;
 }
   
-.header {
-    width: 100%;
-    padding: 1rem 2rem;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.navbar {
+  .main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    flex: 1;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    position: relative;
-    top: 0;
-    left: 0;
-    max-width: 100%;
-    margin: 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    filter: invert(1);
-
-}
-
-.menu {
-    display: flex;
-    gap: 2rem;
-}
-
-.menuItem {
-    color: #333;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.menuItem:hover {
-    color: #0070f3;
-}
-
-.main {
-    height: 90vh;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.body {
-    background: url('/img/floor.jpg') no-repeat center center;
-    background-size: cover;
-    background-color: #F6F7F8;
-}
-
-.hero {
+  }
+  
+  .title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
     text-align: center;
-    color: #fff;
-}
-
-.title {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+  }
+  
+  .title,
+  .description {
     color: black;
+  }
+  
+  .description {
+    line-height: 1.5;
+    font-size: 2rem;
+  }
+  
+  
+  .grid {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+.card {
+    margin: 1rem;
+    flex-basis: 45%;
+    padding: 1.5rem;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #84a59d;
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
 }
-
-.subtitle {
+  
+.card:hover,
+.card:focus,
+.card:active {
+    color: #264653;
+    border-color: #264653;
+}
+  
+.card h2 {
+    margin: 0 0 1rem 0;
     font-size: 1.5rem;
-    margin-bottom: 2rem;
-    color: black;
+}
+  
+.card p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+  
+.card ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card li {
+    display: inline;
+    padding: 5px 10px 5px 10px;
+}
+
+.lead {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding-bottom: 3px;
+    letter-spacing: 4px;
+}
+
+.signature {
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  padding: 1rem 0 0.5rem 0;
 }
 
 .ctaButton {
-    padding: 1rem 2rem;
-    font-size: 1rem;
+    font-family: var(--navbar-font-family);
+    padding: 1rem;
+    width: 60%;
+    font-size: 1.5rem;
     text-transform: uppercase;
     color: #fff;
-    background: #303A2B;
-    border: 1px solid #fff;
+    background: #403d39;
+    border: 2px solid #fff;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
+    padding-bottom: 1rem;
+    position: relative;
+    letter-spacing: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .ctaButton:hover {
+    background: #4a6455;
+    color: white;
+  }
 
-.ctaButton:hover {
-    background: #A4B494;
-    color: black;
-}
-  
-  
+  @media (max-width: 700px) {
+    .grid {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .title {
+      font-size: 3rem;
+    }
+
+    .ctaButton {
+      width: 100%;
+    }
+  }
