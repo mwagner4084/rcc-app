@@ -23,7 +23,8 @@
   --th-color-black: rgba(0, 0, 0, 0.5);
   --th-color-transparent: rgba(0, 0, 0, 0);
   --th-color-gray: rgba(196, 196, 196, 0.5);
-  --card-bg-color: rgba(74, 87, 89, 0.5);
+  --card-bg-color: rgba(163, 177, 138, 0.5);
+  --card-hover-bg-color: rgba(52, 78, 65, 0.75);
 }
 
 * {

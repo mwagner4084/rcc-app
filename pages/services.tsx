@@ -7,7 +7,7 @@ export default function AboutPage() {
     <div className={styles.body}>
         <main className={styles.main}>
             <h1 className={styles.title}>
-                Services Offered
+                <i className="bi bi-dot"></i>Services<i className="bi bi-dot"></i>
             </h1>
             <hr></hr>
             <div className={styles.grid}>

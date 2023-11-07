@@ -85,3 +85,25 @@
 .ul li:hover {
   background-color: #999999;
 }
+
+@media (max-width: 700px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .ctaButton {
+    width: 90%;
+    display: block;
+    margin: auto;
+    letter-spacing: 0.4rem;
+  }
+}

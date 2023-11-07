@@ -24,7 +24,7 @@ export default function AboutPage() {
           <div className={styles.grid}>
             <div className={styles.card}>
               <h2>
-                An introduction &rarr;
+                Introduction &rarr;
               </h2>
               <p>
                 Welcome to RSC Construction Services, LLC. I'm Robb Connell, and I've dedicated over three decades to the building and construction trades. My journey through various leadership roles and extensive field experience has culminated in the founding of this company—a beacon of quality for homeowners seeking unparalleled craftsmanship.
