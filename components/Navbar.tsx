@@ -14,6 +14,9 @@ const Navbar = () => {
             <Link href="/services" className={styles.link}>
                 Services
             </Link>
+            <Link href="/gallery" className={styles.link}>
+                Gallery
+            </Link>
             <Link href="/contact" className={styles.link}>
                 Contact 
             </Link>

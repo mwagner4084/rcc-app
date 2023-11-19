@@ -1,12 +1,13 @@
 .footer {
     text-transform: uppercase;
-    font-family: var(--bs-body-font-family);
-    background: #656d4a;
+    font-family: var(--footer-font-family);
+    background: #004346;
     color: #fff;
     text-align: center;
     font-size: 1rem;
     font-weight: 300;
     border-top: 1px solid #fff;
+    flex-shrink: 0;
 }
 
 

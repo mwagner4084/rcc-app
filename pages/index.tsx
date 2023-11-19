@@ -43,6 +43,26 @@ export default function Home() {
                 </ul>
               </div>
               <button className={styles.ctaButton}>Request a quote</button>
+              <div className={styles.grid}>
+                <div className={styles.card}>
+                  <h2>
+                    Meet the Owner &rarr;
+                  </h2>
+                  <p>
+                    Learn more about the owner of RSC Construction Services, LLC and his journey .
+                  </p>
+                </div>
+                <div className={styles.card}>
+                  <h2>
+                    Services Offered &rarr;
+                  </h2>
+                </div>
+                <div className={styles.card}>
+                  <h2>
+                    Gallery &rarr;
+                  </h2>
+                </div>
+              </div>
           </div>
       </main>
   </div>
