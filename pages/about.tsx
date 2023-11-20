@@ -70,6 +70,9 @@ export default function AboutPage() {
                 With a solid educational background and a firm grasp on practical skills, I am proud to bring a scholarly approach to the building arts. This unique combination ensures that RSC Construction Services, LLC isn&apos;t just about building and repairs—it&apos;s about creating lasting value for your home.
               </p>
             </div>
+            <a href="/contact"> 
+              <button className={styles.ctaButton}>Request a quote</button>
+            </a>
           </div>
         </main>
     </div>

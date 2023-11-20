@@ -1,8 +1,39 @@
 // pages/contact.tsx
-import React from "react";
+import React, { FormEvent } from "react";
 import styles from "../styles/Contact.module.css"; // Adjust the path as necessary
 
 const Contact = () => {
+    // Define the submit handler
+    const handleSubmit = async (event: FormEvent) => {
+        event.preventDefault();
+
+        // Capture the form data
+        const formData = new FormData(event.target as HTMLFormElement);
+        const formDataObj = Object.fromEntries(formData.entries());
+
+        // Send the data to the API
+        try {
+            const response = await fetch("/api/mail", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formDataObj),
+            });
+
+            if (response.ok) {
+                // Handle successful submission
+                console.log("Message sent successfully!");
+            } else {
+                // Handle errors
+                console.log("Message failed to send.");
+            }
+        } catch (error) {
+            // Handle errors
+            console.error("An unexpected error occurred:", error);
+        }
+    };
+
   return (
     <div className={styles.body}>
         <div className={styles.contactContainer}>

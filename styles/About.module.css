@@ -104,6 +104,29 @@
   padding: 1rem 0 0.5rem 0;
 }
 
+.ctaButton {
+  font-family: var(--headings-font-family);
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  color: #fff;
+  background: #553A41;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding-bottom: 1rem;
+  position: relative;
+  letter-spacing: 0.5rem;
+  margin-top: 1rem;
+}
+
+.ctaButton:hover {
+  background: #4a6455;
+  color: white;
+}
+
 @media (max-width: 705px) {
     .grid {
       width: 100%;
