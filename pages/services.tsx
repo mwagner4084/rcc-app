@@ -1,6 +1,5 @@
 // pages/services.tsx
-import Image from 'next/image';
-import styles from '../styles/Services.module.css';
+import styles from "../styles/Services.module.css";
 
 export default function AboutPage() {
   return (

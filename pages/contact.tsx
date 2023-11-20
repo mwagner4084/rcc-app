@@ -1,6 +1,6 @@
 // pages/contact.tsx
-import React from 'react';
-import styles from '../styles/Contact.module.css'; // Adjust the path as necessary
+import React from "react";
+import styles from "../styles/Contact.module.css"; // Adjust the path as necessary
 
 const Contact = () => {
   return (
