@@ -45,7 +45,8 @@ export default function Home() {
               <div className={styles.grid}>
                 <div className={styles.card}>
                   <h2>
-                    Meet the Owner &rarr;
+                    <a href="/about">Meet the Owner &rarr;</a>
+                    
                   </h2>
                   <p>
                     Learn more about the background and journey of owner, Robb Connell.
@@ -53,7 +54,7 @@ export default function Home() {
                 </div>
                 <div className={styles.card}>
                   <h2>
-                    Services Offered &rarr;
+                    <a href="/services">Services Offered &rarr;</a>
                   </h2>
                   <p>
                     Explore the wide range of services offered by RSC Construction Services, LLC.
@@ -61,14 +62,16 @@ export default function Home() {
                 </div>
                 <div className={styles.card}>
                   <h2>
-                    Gallery &rarr;
+                    <a href="/services">Gallery &rarr;</a>
                   </h2>
                   <p>
                     View a selection of projects completed by RSC Construction Services, LLC.
                   </p>
                 </div>
               </div>
-              <button className={styles.ctaButton}>Request a quote</button>
+              <a href="/contact"> 
+                <button className={styles.ctaButton}>Request a quote</button>
+              </a>
           </div>
       </main>
   </div>
