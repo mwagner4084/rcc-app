@@ -103,10 +103,10 @@
 }
 
 .ctaButton {
-    font-family: var(--navbar-font-family);
+    font-family: var(--headings-font-family);
     padding: 1rem;
     width: 60%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     color: #fff;
     background: #403d39;

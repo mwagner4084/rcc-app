@@ -52,13 +52,16 @@ const slideImages = [
 const Gallery = () => {
     return (
         <div className={styles.body}>
+            <h1 className={styles.title}>
+                <i className="bi bi-dot"></i>Gallery<i className="bi bi-dot"></i>
+            </h1>
             <div className={styles.slideContainer}>
                 <Slide>
                     {slideImages.map((slide, index) => (
                         <div className={styles.eachSlide} key={index}>
                             <div>
                                 <img src={slide.url} alt={slide.alt} />
-                                <p className={styles.imageDescription}>{slide.caption}</p>
+                                <h2 className={styles.imageDescription}>{slide.caption}</h2>
                             </div>
                         </div>
                     ))}

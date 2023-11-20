@@ -14,14 +14,14 @@
 }
 
 @font-face {
-  font-family: 'Vina Sans';
-  src: url('/fonts/VinaSans-Regular.ttf') format('truetype');
+  font-family: 'Smooch Sans';
+  src: url('/fonts/SmoochSans.ttf') format('truetype');
 }
 
 :root {
   --navbar-font-family: 'Major Birch', sans-serif;
   --bs-body-font-family: 'Mohave', sans-serif;
-  --headings-font-family: 'Vina Sans', sans-serif;
+  --headings-font-family: 'Smooch Sans', sans-serif;
   --footer-font-family: 'Mohave', sans-serif;
   --max-width: 1100px;
   --border-radius: 12px;

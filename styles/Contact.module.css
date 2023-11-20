@@ -14,12 +14,12 @@
 }
 
 .label {
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight:bolder;
 }
 
 .h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     font-family: var(--headings-font-family);
 }
@@ -55,6 +55,7 @@
     cursor: pointer;
     transition: background-color 0.3s;
     font-family: var(--bs-body-font-family);
+    font-size: 1.25rem;
   }
   
   .submitButton:hover {

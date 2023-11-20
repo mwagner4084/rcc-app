@@ -1,11 +1,30 @@
 /* styles/Home.module.css */
+.body {
+  background: url('/img/floor.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #F6F7F8;
+  /* padding: 0 2rem; */
+}
+
+.main {
+  min-height: 100vh;
+  padding: 1rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
 .logo {
   position: relative;
   top: 0;
   left: 0;
   max-width: 100%;
   margin: 0;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   filter: invert(1);
 
@@ -16,19 +35,7 @@
   color: #fff;
 }
 
-.main {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-}
 
-.body {
-  background: url('/img/floor.jpg') no-repeat center center;
-  background-size: cover;
-  background-color: #F6F7F8;
-  min-height: 100vh;
-}
 
 .title {
   font-size: 3rem;
@@ -38,9 +45,10 @@
 }
 
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-bottom: 1rem;
   color: black;
+  font-family: var(--headings-font-family);
 }
 
 .ctaButton {
@@ -90,10 +98,11 @@
 }
 
 .grid {
-  display: flex;
-  flex-direction: row;
+  display: inline-block;
   align-items: stretch;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 .card {
@@ -120,6 +129,7 @@
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.2rem;
+  font-family: var(--headings-font-family);
 }
 
 .card p {
@@ -148,11 +158,11 @@
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .ctaButton {
@@ -160,6 +170,11 @@
     display: block;
     margin: auto;
     letter-spacing: 0.4rem;
+  }
+
+  .ul,
+  .li {
+    font-size: 1.2rem;
   }
 }
 
