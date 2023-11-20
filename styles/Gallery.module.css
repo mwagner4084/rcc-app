@@ -122,6 +122,13 @@
         width: 100%; /* Full width for very small devices */
         height: 100%;
     }
+
+    .eachSlide div h2, .eachSlide div p {
+        font-size: 1.5rem; /* Reduce font size on small screens */
+        text-transform: uppercase;
+        margin-top: 1rem;
+        font-family: var(--headings-font-family);
+    }
   }
   
   @media (min-width: 768px) and (max-width: 980px) {

@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link href="https://fonts.googleapis.com/css?family=Mohave:wght@400;600&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css?family=Major+Birch:wght@400;600&display=swap" rel="stylesheet"></link>
-        <link href="https://fonts.googleapis.com/css?family=Vina+Sans:wght@400;600&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css?family=Smooch+Sans:wght@400;600&display=swap" rel="stylesheet"></link>
       </Head>
       <Navbar />
       <div className="flex-grow">
