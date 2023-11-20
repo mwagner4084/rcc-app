@@ -27,7 +27,7 @@ export default function AboutPage() {
                 Introduction &rarr;
               </h2>
               <p>
-                Welcome to RSC Construction Services, LLC. I'm Robb Connell, and I've dedicated over three decades to the building and construction trades. My journey through various leadership roles and extensive field experience has culminated in the founding of this company—a beacon of quality for homeowners seeking unparalleled craftsmanship.
+                Welcome to RSC Construction Services, LLC. I&apos;m Robb Connell, and I&apos;ve dedicated over three decades to the building and construction trades. My journey through various leadership roles and extensive field experience has culminated in the founding of this company—a beacon of quality for homeowners seeking unparalleled craftsmanship.
               </p>
             </div>
             <div className={styles.card}>
@@ -35,7 +35,7 @@ export default function AboutPage() {
                 My Journey &rarr;
               </h2>
               <p>
-                From guiding Connell's Restoration & Sealants to becoming an industry benchmark to leading projects as the VP of Structural Restoration & Sealants, my career has been driven by a passion for excellence and growth. The discipline and precision I learned in the Navy as an Avionics Supervisor have been the bedrock of my work ethic. These experiences, combined with a rigorous education in Mathematics and Accountancy, empower me to deliver services that not only meet but exceed your expectations.
+                From guiding Connell&apos;s Restoration & Sealants to becoming an industry benchmark to leading projects as the VP of Structural Restoration & Sealants, my career has been driven by a passion for excellence and growth. The discipline and precision I learned in the Navy as an Avionics Supervisor have been the bedrock of my work ethic. These experiences, combined with a rigorous education in Mathematics and Accountancy, empower me to deliver services that not only meet but exceed your expectations.
               </p>
             </div>
             <div className={styles.card}>
@@ -67,7 +67,7 @@ export default function AboutPage() {
                 Credentials &rarr;
               </h2>
               <p>
-                With a solid educational background and a firm grasp on practical skills, I am proud to bring a scholarly approach to the building arts. This unique combination ensures that RSC Construction Services, LLC isn't just about building and repairs—it's about creating lasting value for your home.
+                With a solid educational background and a firm grasp on practical skills, I am proud to bring a scholarly approach to the building arts. This unique combination ensures that RSC Construction Services, LLC isn&apos;t just about building and repairs—it&apos;s about creating lasting value for your home.
               </p>
             </div>
           </div>
