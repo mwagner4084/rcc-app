@@ -7,7 +7,7 @@ export default function AboutPage() {
     <div className={styles.body}>
       <main className={styles.main}>
           <h1 className={styles.title}>
-            Meet the Owner
+          <i className="bi bi-dot"></i>Meet the Owner<i className="bi bi-dot"></i>
           </h1>
           <Image 
             className={styles.signature}

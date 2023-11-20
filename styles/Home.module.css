@@ -34,7 +34,7 @@
   font-size: 3rem;
   margin-bottom: 0.5rem;
   color: black;
-  font-family: var(--navbar-font-family);
+  font-family: var(--headings-font-family);
 }
 
 .subtitle {
@@ -44,10 +44,10 @@
 }
 
 .ctaButton {
-  font-family: var(--navbar-font-family);
+  font-family: var(--headings-font-family);
   padding: 1rem;
-  width: 60%;
-  font-size: 1.5rem;
+  width: 40%;
+  font-size: 1.75rem;
   text-transform: uppercase;
   color: #fff;
   background: #553A41;

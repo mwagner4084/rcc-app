@@ -42,27 +42,33 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <button className={styles.ctaButton}>Request a quote</button>
               <div className={styles.grid}>
                 <div className={styles.card}>
                   <h2>
                     Meet the Owner &rarr;
                   </h2>
                   <p>
-                    Learn more about the owner of RSC Construction Services, LLC and his journey .
+                    Learn more about the background and journey of owner, Robb Connell.
                   </p>
                 </div>
                 <div className={styles.card}>
                   <h2>
                     Services Offered &rarr;
                   </h2>
+                  <p>
+                    Explore the wide range of services offered by RSC Construction Services, LLC.
+                  </p>
                 </div>
                 <div className={styles.card}>
                   <h2>
                     Gallery &rarr;
                   </h2>
+                  <p>
+                    View a selection of projects completed by RSC Construction Services, LLC.
+                  </p>
                 </div>
               </div>
+              <button className={styles.ctaButton}>Request a quote</button>
           </div>
       </main>
   </div>

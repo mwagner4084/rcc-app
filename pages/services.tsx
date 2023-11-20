@@ -61,7 +61,7 @@ export default function AboutPage() {
                 </div>
                 <div className={styles.card}>
                     <h2>
-                        Weather Proofing
+                        Weather Proofing &rarr;
                     </h2>
                     <p>
                         Sealing gaps, insulating spaces, and other services to keep you comfortable year-round.
@@ -69,7 +69,7 @@ export default function AboutPage() {
                 </div>
                 <div className={styles.card}>
                     <h2>
-                        Lite Plumbing and Electrical
+                        Lite Plumbing + Electrical &rarr;
                     </h2>
                     <p>
                         Fixing leaks, rewiring, and general plumbing and electrical maintenance.

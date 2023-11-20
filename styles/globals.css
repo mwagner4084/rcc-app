@@ -12,10 +12,16 @@
   font-family: 'Mohave';
   src: url('/fonts/Mohave.ttf') format('truetype'); 
 }
+
+@font-face {
+  font-family: 'Vina Sans';
+  src: url('/fonts/VinaSans-Regular.ttf') format('truetype');
+}
+
 :root {
   --navbar-font-family: 'Major Birch', sans-serif;
   --bs-body-font-family: 'Mohave', sans-serif;
-  --headings-font-family: 'Major Birch', sans-serif;
+  --headings-font-family: 'Vina Sans', sans-serif;
   --footer-font-family: 'Mohave', sans-serif;
   --max-width: 1100px;
   --border-radius: 12px;
@@ -23,7 +29,7 @@
   --th-color-black: rgba(0, 0, 0, 0.5);
   --th-color-transparent: rgba(0, 0, 0, 0);
   --th-color-gray: rgba(196, 196, 196, 0.5);
-  --card-bg-color: rgba(163, 177, 138, 0.5);
+  --card-bg-color: rgba(126, 140, 104, 0.5);
   --card-hover-bg-color: rgba(52, 78, 65, 0.75);
 }
 
@@ -62,6 +68,7 @@ h2,
 h3 {
   font-family: var(--headings-font-family);
   text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 
 p {
