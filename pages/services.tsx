@@ -8,9 +8,11 @@ export default function AboutPage() {
                 <h1 className={styles.title}>
                     <i className="bi bi-dot"></i>Services<i className="bi bi-dot"></i>
                 </h1>
-                <h2 className={styles.subtitle}>
-                    As a veteran business-owner, I take pride in my attention to detail and commitment to excellence. I specialize in small jobs, ensuring each project receives the care and dedication it deserves.
-                </h2>
+                <div className={styles.cardSubtitle}>
+                    <p className={styles.subtitle}>
+                        As a veteran business-owner, I take pride in my attention to detail and commitment to excellence. I specialize in small jobs, ensuring each project receives the care and dedication it deserves.
+                    </p>
+                </div>
                 <hr></hr>
                 <div className={styles.grid}>
                     <div className={styles.card}>
