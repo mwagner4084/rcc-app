@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Mohave';
-  src: url('/fonts/Mohave.ttf') format('truetype'); 
+  src: url('/fonts/Mohave.ttf') format('truetype');
 }
 
 @font-face {
@@ -43,12 +43,27 @@
 .flex {
   display: flex;
 }
+
+.block {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .flex-col {
   flex-direction: column;
 }
+
+.justify-center {
+  justify-content: center;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
+
 .flex-grow {
   flex-grow: 1;
 }
@@ -74,4 +89,8 @@ h3 {
 p {
   font-family: var(--bs-body-font-family);
   font-size: 1rem + 1vh;
+}
+
+.m-auto {
+  margin: auto;
 }

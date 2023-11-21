@@ -1,6 +1,6 @@
-import Link from "next/link"
-import React from "react"
-import styles from "@/styles/Navbar.module.css"
+import Link from "next/link";
+import React from "react";
+import styles from "@/styles/Navbar.module.css";
 
 const Navbar = () => {
     return (
@@ -21,10 +21,10 @@ const Navbar = () => {
                 Contact 
             </Link>
         </nav>
-    )
-  }
+    );
+  };
 
-  export default Navbar
+  export default Navbar;
 
 
 /* <Link href="/">

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "@/styles/Footer.module.css"
+import styles from "@/styles/Footer.module.css";
 
 function App() {
     const [year, setYear] = useState(new Date().getFullYear());
@@ -19,6 +19,6 @@ function App() {
             </div>
         </footer>
     );
-  };
+};
 
-  export default App;
+export default App;
