@@ -1,21 +1,24 @@
+import type { SentMessageInfo } from "nodemailer/lib/smtp-transport";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { ThanksEmail } from "../../emails/thanksEmail";
 import { render } from "@react-email/render";
-import { handleEmailFire } from "../../lib/email-helper";
+import { handleEmailFire, Payload } from "../../lib/email-helper";
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  await sendEmail({
-    to: "mw.devdesign@gmail.com",
+  const result: SentMessageInfo = await sendEmail({
+    recipient: "mw.devdesign@gmail.com",
     subject: "Thanks for your request",
     html: render(ThanksEmail()),
   });
 
-  return res.status(200).json({ message: "Success" });
+  const status = result.accepted.length > 0 ? 200 : 500;
+
+  res.status(status).json(result);
 }
 
-function sendEmail(arg0: { to: string; subject: string; html: string; }) {
-  throw new Error("Function not implemented.");
+function sendEmail(params: Payload ) {
+  return handleEmailFire(params);
 }

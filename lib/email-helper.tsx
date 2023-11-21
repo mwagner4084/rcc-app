@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 
-type Payload = {
+export type Payload = {
   recipient: string;
   subject: string;
   html: string;
