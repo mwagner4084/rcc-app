@@ -1,19 +1,28 @@
 // pages/contact.tsx
 import type { SentMessageInfo } from "nodemailer/lib/smtp-transport";
-import React, { FormEvent } from "react";
+import React, { FormEvent, useRef } from "react";
 import styles from "../styles/Contact.module.css"; // Adjust the path as necessary
 
 const Contact = () => {
-    // Define the submit handler
-    const handleSubmit = async (event: FormEvent) => {
-        event.preventDefault();
+    // Define the form reference
+    const formRef = useRef<HTMLFormElement>(null);
+    const [sending, setSending] = React.useState(false);
 
-        // Capture the form data
-        const formData = new FormData(event.target as HTMLFormElement);
+    // Define the submit handler
+    const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        setSending(true);
+
+        if (!formRef.current) {
+            return;
+        }
+
+        const form = formRef.current;
+        const formData = new FormData(form);
         const formDataObj = Object.fromEntries(formData.entries());
 
         // Send the data to the API
-        const response: SentMessageInfo | null = await fetch("/api/mail", {
+        const response: { success: boolean; message: string; } = await fetch("/api/mail", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -21,18 +30,27 @@ const Contact = () => {
             body: JSON.stringify(formDataObj),
         })
             .then((res) => {
-                if (res.ok) {
-                    return res.json();
+                if (!res.ok) {
+                    throw new Error("Something went wrong");
                 }
-                return null;
+                return res.json();
             })
             .catch((error) => {
-                console.error("Error:", error);
-                return null;
+                return {
+                    success: false,
+                    message: "An unknown error occurred while sending your message.",
+                };
             });
 
-        console.log("Response:", response);
+        if (response.success) {
+            // Redirect to the thanks page
+            window.location.href = "/thank-you";
+        } else {
+            // Show the user the error message
+            alert(response.message);
+        }
 
+        setSending(false);
     };
 
     return (
@@ -41,7 +59,7 @@ const Contact = () => {
                 <h1 className={styles.h1}>
                     <i className="bi bi-dot"></i>Contact Us<i className="bi bi-dot"></i>
                 </h1>
-                <form className={styles.contactForm}>
+                <form ref={formRef} className={styles.contactForm} onSubmit={handleSubmit}>
                     <div className={styles.formGroup}>
                         <label htmlFor="name" className={styles.label}>
                             Name
@@ -61,24 +79,24 @@ const Contact = () => {
                         <input type="email" id="email" name="email" required />
                     </div>
                     <div className={styles.formGroup}>
-                        <label htmlFor="service" className={styles.label}>
+                        <label htmlFor="services" className={styles.label}>
                             Service(s) Requested
                         </label>
-                        <input type="text" id="subject" name="subject" required />
+                        <input type="text" id="services" name="services" required />
                     </div>
                     <div className={styles.formGroup}>
-                        <label htmlFor="comment" className={styles.label}>
+                        <label htmlFor="comments" className={styles.label}>
                             Comments
                         </label>
-                        <textarea id="comment" name="comment" rows={4} required></textarea>
+                        <textarea id="comments" name="comments" rows={4} required></textarea>
                     </div>
-                    <button onClick={handleSubmit} type="submit" className={styles.submitButton}>
-                        Send Request
+                    <button disabled={sending} onClick={(event: React.MouseEvent<HTMLButtonElement, MouseEvent> | React.FormEvent<HTMLFormElement>) => handleSubmit(event as React.FormEvent<HTMLFormElement>)} type="submit" className={styles.submitButton}>
+                        {sending ? "Sending..." : "Send Request"}
                     </button>
                 </form>
             </div>
         </div>
     );
-}
+};
 
 export default Contact;
