@@ -8,6 +8,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  console.log("req", req);
   const result: SentMessageInfo = await sendEmail({
     recipient: "mw.devdesign@gmail.com",
     subject: "Thanks for your request",
@@ -19,6 +20,6 @@ export default async function handler(
   res.status(status).json(result);
 }
 
-function sendEmail(params: Payload ) {
-  return handleEmailFire(params);
+async function sendEmail(params: Payload ): Promise<SentMessageInfo> {
+  return await handleEmailFire(params);
 }
