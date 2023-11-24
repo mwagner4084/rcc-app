@@ -6,9 +6,6 @@ export default function Document() {
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-        <link href="http://fonts.googleapis.com/css?family=Mohave:wght@400;600&display=swap" rel="stylesheet"></link>
-        <link href="http://fonts.googleapis.com/css?family=Major+Birch:wght@400;600&display=swap" rel="stylesheet"></link>
-        <link href="http://fonts.googleapis.com/css?family=Smooch+Sans:wght@400;600&display=swap" rel="stylesheet"></link>
       </Head>
       <body>
         <div className="backgroundImage"></div>

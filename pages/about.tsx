@@ -28,7 +28,7 @@ export default function AboutPage() {
               Introduction &rarr;
             </h2>
             <p>
-              Welcome to RSC Construction Services, LLC. I&apos;m Robb Connell, and I&apos;ve dedicated over three decades to the building and construction trades. My journey through various leadership roles and extensive field experience has culminated in the founding of this company—a beacon of quality for homeowners seeking unparalleled craftsmanship. As a veteran, I bring a unique perspective and dedication to each project. The discipline and precision I learned in the Navy as an Avionics Supervisor have been the bedrock of my work ethic.
+              Welcome to RSC Construction Services, LLC. I&apos;m Robb Connell, and I&apos;ve dedicated over three decades to the building and construction trades. My journey through various leadership roles and extensive field experience has culminated in the founding of this company—a beacon of quality for homeowners seeking unparalleled craftsmanship. As a veteran, I bring a unique perspective and dedication to each project.
             </p>
           </div>
           <div className={styles.card}>
