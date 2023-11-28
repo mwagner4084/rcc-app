@@ -96,4 +96,9 @@ p {
   .body {
     font-family: var(--bs-body-font-family);
   }
+
+  p {
+    font-family: var(--bs-body-font-family);
+    font-size: 1rem;
+  }
 }
