@@ -76,3 +76,7 @@ p {
 .m-auto {
   margin: auto;
 }
+
+.ul {
+  font-family: var(--footer-font-family);
+}
