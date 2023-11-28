@@ -30,7 +30,7 @@ export default async function handler(
   const status1 = result1.accepted.length > 0;
 
   const result2: SentMessageInfo = await handleEmailFire({
-    to: "rsccs120@gmail.com",
+    to: "robb.connell@rscconstructionservices.com",
     subject: "New Services Request",
     html: render(ContactEmail(formFields)),
   });
